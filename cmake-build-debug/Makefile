@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/elusivenode/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/elusivenode/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -129,6 +129,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named pp_2_5
+
+# Build rule for target.
+pp_2_5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pp_2_5
+.PHONY : pp_2_5
+
+# fast build rule for target.
+pp_2_5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_5.dir/build.make CMakeFiles/pp_2_5.dir/build
+.PHONY : pp_2_5/fast
 
 #=============================================================================
 # Target rules for targets named byte_rep
@@ -170,6 +183,33 @@ ch_1/byte_rep.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_rep.dir/build.make CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.s
 .PHONY : ch_1/byte_rep.c.s
 
+ch_1/pp_2_5.o: ch_1/pp_2_5.c.o
+
+.PHONY : ch_1/pp_2_5.o
+
+# target to build an object file
+ch_1/pp_2_5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_5.dir/build.make CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o
+.PHONY : ch_1/pp_2_5.c.o
+
+ch_1/pp_2_5.i: ch_1/pp_2_5.c.i
+
+.PHONY : ch_1/pp_2_5.i
+
+# target to preprocess a source file
+ch_1/pp_2_5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_5.dir/build.make CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.i
+.PHONY : ch_1/pp_2_5.c.i
+
+ch_1/pp_2_5.s: ch_1/pp_2_5.c.s
+
+.PHONY : ch_1/pp_2_5.s
+
+# target to generate assembly for a file
+ch_1/pp_2_5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_5.dir/build.make CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.s
+.PHONY : ch_1/pp_2_5.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +219,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... byte_rep"
+	@echo "... pp_2_5"
 	@echo "... ch_1/byte_rep.o"
 	@echo "... ch_1/byte_rep.i"
 	@echo "... ch_1/byte_rep.s"
+	@echo "... ch_1/pp_2_5.o"
+	@echo "... ch_1/pp_2_5.i"
+	@echo "... ch_1/pp_2_5.s"
 .PHONY : help
 
 
