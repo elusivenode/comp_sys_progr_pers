@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/b.dir/ch_2/byte_rep.c.o CMakeFiles/b.dir/ch_2/pp_2_7.c.o  -o b 

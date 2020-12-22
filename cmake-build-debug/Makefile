@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/elusivenode/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/elusivenode/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named byte_rep
+
+# Build rule for target.
+byte_rep: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 byte_rep
+.PHONY : byte_rep
+
+# fast build rule for target.
+byte_rep/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_rep.dir/build.make CMakeFiles/byte_rep.dir/build
+.PHONY : byte_rep/fast
+
+#=============================================================================
 # Target rules for targets named pp_2_5
 
 # Build rule for target.
@@ -144,17 +157,17 @@ pp_2_5/fast:
 .PHONY : pp_2_5/fast
 
 #=============================================================================
-# Target rules for targets named byte_rep
+# Target rules for targets named pp_2_7
 
 # Build rule for target.
-byte_rep: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 byte_rep
-.PHONY : byte_rep
+pp_2_7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pp_2_7
+.PHONY : pp_2_7
 
 # fast build rule for target.
-byte_rep/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_rep.dir/build.make CMakeFiles/byte_rep.dir/build
-.PHONY : byte_rep/fast
+pp_2_7/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/build
+.PHONY : pp_2_7/fast
 
 ch_2/byte_rep.o: ch_2/byte_rep.c.o
 
@@ -210,6 +223,33 @@ ch_2/pp_2_5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_5.dir/build.make CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.s
 .PHONY : ch_2/pp_2_5.c.s
 
+ch_2/pp_2_7.o: ch_2/pp_2_7.c.o
+
+.PHONY : ch_2/pp_2_7.o
+
+# target to build an object file
+ch_2/pp_2_7.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/ch_2/pp_2_7.c.o
+.PHONY : ch_2/pp_2_7.c.o
+
+ch_2/pp_2_7.i: ch_2/pp_2_7.c.i
+
+.PHONY : ch_2/pp_2_7.i
+
+# target to preprocess a source file
+ch_2/pp_2_7.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/ch_2/pp_2_7.c.i
+.PHONY : ch_2/pp_2_7.c.i
+
+ch_2/pp_2_7.s: ch_2/pp_2_7.c.s
+
+.PHONY : ch_2/pp_2_7.s
+
+# target to generate assembly for a file
+ch_2/pp_2_7.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/ch_2/pp_2_7.c.s
+.PHONY : ch_2/pp_2_7.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,12 +260,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... byte_rep"
 	@echo "... pp_2_5"
+	@echo "... pp_2_7"
 	@echo "... ch_2/byte_rep.o"
 	@echo "... ch_2/byte_rep.i"
 	@echo "... ch_2/byte_rep.s"
 	@echo "... ch_2/pp_2_5.o"
 	@echo "... ch_2/pp_2_5.i"
 	@echo "... ch_2/pp_2_5.s"
+	@echo "... ch_2/pp_2_7.o"
+	@echo "... ch_2/pp_2_7.i"
+	@echo "... ch_2/pp_2_7.s"
 .PHONY : help
 
 
