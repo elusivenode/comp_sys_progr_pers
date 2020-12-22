@@ -77,27 +77,27 @@ include CMakeFiles/pp_2_5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pp_2_5.dir/flags.make
 
-CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o: CMakeFiles/pp_2_5.dir/flags.make
-CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o: ../ch_1/pp_2_5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o   -c /home/elusivenode/Study/comp_sys_prog_pers/ch_1/pp_2_5.c
+CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.o: CMakeFiles/pp_2_5.dir/flags.make
+CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.o: ../ch_2/pp_2_5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.o   -c /home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_5.c
 
-CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elusivenode/Study/comp_sys_prog_pers/ch_1/pp_2_5.c > CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.i
+CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_5.c > CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.i
 
-CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elusivenode/Study/comp_sys_prog_pers/ch_1/pp_2_5.c -o CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.s
+CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_5.c -o CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.s
 
 # Object files for target pp_2_5
 pp_2_5_OBJECTS = \
-"CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o"
+"CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.o"
 
 # External object files for target pp_2_5
 pp_2_5_EXTERNAL_OBJECTS =
 
-pp_2_5: CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o
+pp_2_5: CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.o
 pp_2_5: CMakeFiles/pp_2_5.dir/build.make
 pp_2_5: CMakeFiles/pp_2_5.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable pp_2_5"

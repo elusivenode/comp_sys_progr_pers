@@ -77,27 +77,27 @@ include CMakeFiles/byte_rep.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/byte_rep.dir/flags.make
 
-CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.o: CMakeFiles/byte_rep.dir/flags.make
-CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.o: ../ch_1/byte_rep.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.o   -c /home/elusivenode/Study/comp_sys_prog_pers/ch_1/byte_rep.c
+CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.o: CMakeFiles/byte_rep.dir/flags.make
+CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.o: ../ch_2/byte_rep.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.o   -c /home/elusivenode/Study/comp_sys_prog_pers/ch_2/byte_rep.c
 
-CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elusivenode/Study/comp_sys_prog_pers/ch_1/byte_rep.c > CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.i
+CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elusivenode/Study/comp_sys_prog_pers/ch_2/byte_rep.c > CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.i
 
-CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elusivenode/Study/comp_sys_prog_pers/ch_1/byte_rep.c -o CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.s
+CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elusivenode/Study/comp_sys_prog_pers/ch_2/byte_rep.c -o CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.s
 
 # Object files for target byte_rep
 byte_rep_OBJECTS = \
-"CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.o"
+"CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.o"
 
 # External object files for target byte_rep
 byte_rep_EXTERNAL_OBJECTS =
 
-byte_rep: CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.o
+byte_rep: CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.o
 byte_rep: CMakeFiles/byte_rep.dir/build.make
 byte_rep: CMakeFiles/byte_rep.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable byte_rep"

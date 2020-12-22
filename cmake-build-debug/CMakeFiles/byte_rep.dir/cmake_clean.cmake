@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/byte_rep.dir/ch_1/byte_rep.c.o"
+  "CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.o"
   "byte_rep"
   "byte_rep.pdb"
 )

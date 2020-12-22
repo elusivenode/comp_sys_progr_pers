@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/elusivenode/Study/comp_sys_prog_pers/ch_1/pp_2_5.c" "/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/pp_2_5.dir/ch_1/pp_2_5.c.o"
+  "/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_5.c" "/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/pp_2_5.dir/ch_2/pp_2_5.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
