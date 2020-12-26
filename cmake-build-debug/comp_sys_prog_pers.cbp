@@ -17,11 +17,11 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="edit_cache">
 				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -141,11 +141,49 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="rebuild_cache">
 				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pp_2_10">
+				<Option output="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/pp_2_10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 pp_2_10"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pp_2_10/fast">
+				<Option output="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/pp_2_10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 pp_2_10/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -154,6 +192,9 @@
 		</Build>
 		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/byte_rep.c">
 			<Option target="byte_rep"/>
+		</Unit>
+		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_10.c">
+			<Option target="pp_2_10"/>
 		</Unit>
 		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_5.c">
 			<Option target="pp_2_5"/>

@@ -76,6 +76,7 @@ CMAKE_BINARY_DIR = /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug
 all: CMakeFiles/byte_rep.dir/all
 all: CMakeFiles/pp_2_5.dir/all
 all: CMakeFiles/pp_2_7.dir/all
+all: CMakeFiles/pp_2_10.dir/all
 
 .PHONY : all
 
@@ -88,6 +89,7 @@ preinstall:
 clean: CMakeFiles/byte_rep.dir/clean
 clean: CMakeFiles/pp_2_5.dir/clean
 clean: CMakeFiles/pp_2_7.dir/clean
+clean: CMakeFiles/pp_2_10.dir/clean
 
 .PHONY : clean
 
@@ -125,7 +127,7 @@ CMakeFiles/byte_rep.dir/clean:
 CMakeFiles/pp_2_5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_5.dir/build.make CMakeFiles/pp_2_5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_5.dir/build.make CMakeFiles/pp_2_5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target pp_2_5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target pp_2_5"
 .PHONY : CMakeFiles/pp_2_5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -152,7 +154,7 @@ CMakeFiles/pp_2_5.dir/clean:
 CMakeFiles/pp_2_7.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target pp_2_7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target pp_2_7"
 .PHONY : CMakeFiles/pp_2_7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -171,6 +173,33 @@ pp_2_7: CMakeFiles/pp_2_7.dir/rule
 CMakeFiles/pp_2_7.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/clean
 .PHONY : CMakeFiles/pp_2_7.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pp_2_10.dir
+
+# All Build rule for target.
+CMakeFiles/pp_2_10.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target pp_2_10"
+.PHONY : CMakeFiles/pp_2_10.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pp_2_10.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pp_2_10.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/pp_2_10.dir/rule
+
+# Convenience name for target.
+pp_2_10: CMakeFiles/pp_2_10.dir/rule
+
+.PHONY : pp_2_10
+
+# clean rule for target.
+CMakeFiles/pp_2_10.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/clean
+.PHONY : CMakeFiles/pp_2_10.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

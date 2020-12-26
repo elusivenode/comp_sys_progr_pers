@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/elusivenode/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/elusivenode/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -169,6 +169,19 @@ pp_2_7/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/build
 .PHONY : pp_2_7/fast
 
+#=============================================================================
+# Target rules for targets named pp_2_10
+
+# Build rule for target.
+pp_2_10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pp_2_10
+.PHONY : pp_2_10
+
+# fast build rule for target.
+pp_2_10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/build
+.PHONY : pp_2_10/fast
+
 ch_2/byte_rep.o: ch_2/byte_rep.c.o
 
 .PHONY : ch_2/byte_rep.o
@@ -195,6 +208,33 @@ ch_2/byte_rep.s: ch_2/byte_rep.c.s
 ch_2/byte_rep.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_rep.dir/build.make CMakeFiles/byte_rep.dir/ch_2/byte_rep.c.s
 .PHONY : ch_2/byte_rep.c.s
+
+ch_2/pp_2_10.o: ch_2/pp_2_10.c.o
+
+.PHONY : ch_2/pp_2_10.o
+
+# target to build an object file
+ch_2/pp_2_10.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/ch_2/pp_2_10.c.o
+.PHONY : ch_2/pp_2_10.c.o
+
+ch_2/pp_2_10.i: ch_2/pp_2_10.c.i
+
+.PHONY : ch_2/pp_2_10.i
+
+# target to preprocess a source file
+ch_2/pp_2_10.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/ch_2/pp_2_10.c.i
+.PHONY : ch_2/pp_2_10.c.i
+
+ch_2/pp_2_10.s: ch_2/pp_2_10.c.s
+
+.PHONY : ch_2/pp_2_10.s
+
+# target to generate assembly for a file
+ch_2/pp_2_10.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/ch_2/pp_2_10.c.s
+.PHONY : ch_2/pp_2_10.c.s
 
 ch_2/pp_2_5.o: ch_2/pp_2_5.c.o
 
@@ -259,11 +299,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... byte_rep"
+	@echo "... pp_2_10"
 	@echo "... pp_2_5"
 	@echo "... pp_2_7"
 	@echo "... ch_2/byte_rep.o"
 	@echo "... ch_2/byte_rep.i"
 	@echo "... ch_2/byte_rep.s"
+	@echo "... ch_2/pp_2_10.o"
+	@echo "... ch_2/pp_2_10.i"
+	@echo "... ch_2/pp_2_10.s"
 	@echo "... ch_2/pp_2_5.o"
 	@echo "... ch_2/pp_2_5.i"
 	@echo "... ch_2/pp_2_5.s"
