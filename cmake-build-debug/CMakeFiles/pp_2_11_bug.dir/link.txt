@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/pp_2_11_bug.dir/ch_2/utils.c.o CMakeFiles/pp_2_11_bug.dir/ch_2/pp_2_11_bug.c.o  -o pp_2_11_bug 

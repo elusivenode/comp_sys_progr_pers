@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_11_fix.c
+stdio.h
+-
+utils.h
+/home/elusivenode/Study/comp_sys_prog_pers/ch_2/utils.h
+
+/home/elusivenode/Study/comp_sys_prog_pers/ch_2/utils.h
+

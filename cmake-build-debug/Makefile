@@ -131,6 +131,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pp_2_11_fix
+
+# Build rule for target.
+pp_2_11_fix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pp_2_11_fix
+.PHONY : pp_2_11_fix
+
+# fast build rule for target.
+pp_2_11_fix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_fix.dir/build.make CMakeFiles/pp_2_11_fix.dir/build
+.PHONY : pp_2_11_fix/fast
+
+#=============================================================================
+# Target rules for targets named pp_2_11_bug
+
+# Build rule for target.
+pp_2_11_bug: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pp_2_11_bug
+.PHONY : pp_2_11_bug
+
+# fast build rule for target.
+pp_2_11_bug/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_bug.dir/build.make CMakeFiles/pp_2_11_bug.dir/build
+.PHONY : pp_2_11_bug/fast
+
+#=============================================================================
 # Target rules for targets named byte_rep
 
 # Build rule for target.
@@ -236,6 +262,60 @@ ch_2/pp_2_10.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_10.dir/build.make CMakeFiles/pp_2_10.dir/ch_2/pp_2_10.c.s
 .PHONY : ch_2/pp_2_10.c.s
 
+ch_2/pp_2_11_bug.o: ch_2/pp_2_11_bug.c.o
+
+.PHONY : ch_2/pp_2_11_bug.o
+
+# target to build an object file
+ch_2/pp_2_11_bug.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_bug.dir/build.make CMakeFiles/pp_2_11_bug.dir/ch_2/pp_2_11_bug.c.o
+.PHONY : ch_2/pp_2_11_bug.c.o
+
+ch_2/pp_2_11_bug.i: ch_2/pp_2_11_bug.c.i
+
+.PHONY : ch_2/pp_2_11_bug.i
+
+# target to preprocess a source file
+ch_2/pp_2_11_bug.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_bug.dir/build.make CMakeFiles/pp_2_11_bug.dir/ch_2/pp_2_11_bug.c.i
+.PHONY : ch_2/pp_2_11_bug.c.i
+
+ch_2/pp_2_11_bug.s: ch_2/pp_2_11_bug.c.s
+
+.PHONY : ch_2/pp_2_11_bug.s
+
+# target to generate assembly for a file
+ch_2/pp_2_11_bug.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_bug.dir/build.make CMakeFiles/pp_2_11_bug.dir/ch_2/pp_2_11_bug.c.s
+.PHONY : ch_2/pp_2_11_bug.c.s
+
+ch_2/pp_2_11_fix.o: ch_2/pp_2_11_fix.c.o
+
+.PHONY : ch_2/pp_2_11_fix.o
+
+# target to build an object file
+ch_2/pp_2_11_fix.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_fix.dir/build.make CMakeFiles/pp_2_11_fix.dir/ch_2/pp_2_11_fix.c.o
+.PHONY : ch_2/pp_2_11_fix.c.o
+
+ch_2/pp_2_11_fix.i: ch_2/pp_2_11_fix.c.i
+
+.PHONY : ch_2/pp_2_11_fix.i
+
+# target to preprocess a source file
+ch_2/pp_2_11_fix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_fix.dir/build.make CMakeFiles/pp_2_11_fix.dir/ch_2/pp_2_11_fix.c.i
+.PHONY : ch_2/pp_2_11_fix.c.i
+
+ch_2/pp_2_11_fix.s: ch_2/pp_2_11_fix.c.s
+
+.PHONY : ch_2/pp_2_11_fix.s
+
+# target to generate assembly for a file
+ch_2/pp_2_11_fix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_fix.dir/build.make CMakeFiles/pp_2_11_fix.dir/ch_2/pp_2_11_fix.c.s
+.PHONY : ch_2/pp_2_11_fix.c.s
+
 ch_2/pp_2_5.o: ch_2/pp_2_5.c.o
 
 .PHONY : ch_2/pp_2_5.o
@@ -290,6 +370,36 @@ ch_2/pp_2_7.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_7.dir/build.make CMakeFiles/pp_2_7.dir/ch_2/pp_2_7.c.s
 .PHONY : ch_2/pp_2_7.c.s
 
+ch_2/utils.o: ch_2/utils.c.o
+
+.PHONY : ch_2/utils.o
+
+# target to build an object file
+ch_2/utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_fix.dir/build.make CMakeFiles/pp_2_11_fix.dir/ch_2/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_bug.dir/build.make CMakeFiles/pp_2_11_bug.dir/ch_2/utils.c.o
+.PHONY : ch_2/utils.c.o
+
+ch_2/utils.i: ch_2/utils.c.i
+
+.PHONY : ch_2/utils.i
+
+# target to preprocess a source file
+ch_2/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_fix.dir/build.make CMakeFiles/pp_2_11_fix.dir/ch_2/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_bug.dir/build.make CMakeFiles/pp_2_11_bug.dir/ch_2/utils.c.i
+.PHONY : ch_2/utils.c.i
+
+ch_2/utils.s: ch_2/utils.c.s
+
+.PHONY : ch_2/utils.s
+
+# target to generate assembly for a file
+ch_2/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_fix.dir/build.make CMakeFiles/pp_2_11_fix.dir/ch_2/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pp_2_11_bug.dir/build.make CMakeFiles/pp_2_11_bug.dir/ch_2/utils.c.s
+.PHONY : ch_2/utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,6 +410,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... byte_rep"
 	@echo "... pp_2_10"
+	@echo "... pp_2_11_bug"
+	@echo "... pp_2_11_fix"
 	@echo "... pp_2_5"
 	@echo "... pp_2_7"
 	@echo "... ch_2/byte_rep.o"
@@ -308,12 +420,21 @@ help:
 	@echo "... ch_2/pp_2_10.o"
 	@echo "... ch_2/pp_2_10.i"
 	@echo "... ch_2/pp_2_10.s"
+	@echo "... ch_2/pp_2_11_bug.o"
+	@echo "... ch_2/pp_2_11_bug.i"
+	@echo "... ch_2/pp_2_11_bug.s"
+	@echo "... ch_2/pp_2_11_fix.o"
+	@echo "... ch_2/pp_2_11_fix.i"
+	@echo "... ch_2/pp_2_11_fix.s"
 	@echo "... ch_2/pp_2_5.o"
 	@echo "... ch_2/pp_2_5.i"
 	@echo "... ch_2/pp_2_5.s"
 	@echo "... ch_2/pp_2_7.o"
 	@echo "... ch_2/pp_2_7.i"
 	@echo "... ch_2/pp_2_7.s"
+	@echo "... ch_2/utils.o"
+	@echo "... ch_2/utils.i"
+	@echo "... ch_2/utils.s"
 .PHONY : help
 
 

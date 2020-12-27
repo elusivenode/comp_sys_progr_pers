@@ -1,4 +1,6 @@
 /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/pp_2_11_fix.dir
+/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/pp_2_11_bug.dir
 /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/byte_rep.dir
 /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/pp_2_5.dir
 /home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/CMakeFiles/pp_2_7.dir

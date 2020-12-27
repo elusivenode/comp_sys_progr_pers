@@ -27,6 +27,82 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="pp_2_11_fix">
+				<Option output="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/pp_2_11_fix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 pp_2_11_fix"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pp_2_11_fix/fast">
+				<Option output="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/pp_2_11_fix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 pp_2_11_fix/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pp_2_11_bug">
+				<Option output="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/pp_2_11_bug" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 pp_2_11_bug"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pp_2_11_bug/fast">
+				<Option output="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/pp_2_11_bug" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 pp_2_11_bug/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="byte_rep">
 				<Option output="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug/byte_rep" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/elusivenode/Study/comp_sys_prog_pers/cmake-build-debug"/>
@@ -196,11 +272,25 @@
 		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_10.c">
 			<Option target="pp_2_10"/>
 		</Unit>
+		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_11_bug.c">
+			<Option target="pp_2_11_bug"/>
+		</Unit>
+		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_11_fix.c">
+			<Option target="pp_2_11_fix"/>
+		</Unit>
 		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_5.c">
 			<Option target="pp_2_5"/>
 		</Unit>
 		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/pp_2_7.c">
 			<Option target="pp_2_7"/>
+		</Unit>
+		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/utils.c">
+			<Option target="pp_2_11_fix"/>
+			<Option target="pp_2_11_bug"/>
+		</Unit>
+		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/ch_2/utils.h">
+			<Option target="pp_2_11_fix"/>
+			<Option target="pp_2_11_bug"/>
 		</Unit>
 		<Unit filename="/home/elusivenode/Study/comp_sys_prog_pers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
