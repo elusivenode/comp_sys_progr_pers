@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/pp_2_10.dir/ch_2/pp_2_10.c.o  -o pp_2_10 
