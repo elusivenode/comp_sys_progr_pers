@@ -1,2 +1,13 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 .idea/
 cmake-build-debug/
+book_code/
+.DS_Store
