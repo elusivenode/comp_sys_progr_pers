@@ -7,6 +7,23 @@
 # Unignore all dirs
 !*/
 
+# C build artifacts
+*.o
+*.obj
+*.exe
+*.out
+a.out
+*.a
+*.so
+*.dylib
+*.dll
+*.dSYM/
+
+# Zig build artifacts
+zig-cache/
+zig-out/
+.zig-cache/
+
 .idea/
 cmake-build-debug/
 book_code/
