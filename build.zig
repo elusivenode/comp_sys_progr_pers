@@ -1,4 +1,5 @@
 const std = @import("std");
+const modules = @import("modules.zig");
 
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
@@ -20,7 +21,9 @@ pub fn build(b: *std.Build) void {
 
     const test_step = b.step("test", "Run tests");
 
-    addExamples(b, target, optimize, test_step) catch |err| {
+    const shared = modules.make(b, target, optimize);
+
+    addExamples(b, target, optimize, test_step, shared) catch |err| {
         std.debug.panic("failed to scan examples: {s}", .{@errorName(err)});
     };
 }
@@ -30,6 +33,7 @@ fn addExamples(
     target: std.Build.ResolvedTarget,
     optimize: std.builtin.OptimizeMode,
     test_step: *std.Build.Step,
+    shared: modules.Modules,
 ) !void {
     const allocator = b.allocator;
 
@@ -69,6 +73,8 @@ fn addExamples(
                 .optimize = optimize,
             });
             exe.addCSourceFile(.{ .file = source_path, .flags = &[_][]const u8{} });
+            exe.addIncludePath(shared.c_include);
+            exe.linkLibrary(shared.c_lib);
             exe.linkLibC();
             b.installArtifact(exe);
         } else if (std.mem.eql(u8, ext, ".zig")) {
@@ -78,6 +84,7 @@ fn addExamples(
                 .target = target,
                 .optimize = optimize,
             });
+            exe.root_module.addImport("time", shared.zig_time);
             b.installArtifact(exe);
         }
     }

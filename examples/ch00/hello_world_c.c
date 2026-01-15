@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "time.h"
 
 int main(void) {
-    puts("hello from c");
+    printf("hello from c (%lld)\n", utc_timestamp());
     return 0;
 }
